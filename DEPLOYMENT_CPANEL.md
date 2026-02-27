@@ -21,6 +21,14 @@
    - `composer require barryvdh/laravel-dompdf`
    - `composer require maatwebsite/excel`
 8. Create cron jobs:
+5. Run in Terminal:
+   - `php artisan key:generate`
+   - `php artisan migrate --force`
+   - `php artisan db:seed --class=InitialSaasSeeder`
+6. Install report packages:
+   - `composer require barryvdh/laravel-dompdf`
+   - `composer require maatwebsite/excel`
+7. Create cron jobs:
    - `* * * * * php /home/<cpanel-user>/assetpulse/artisan schedule:run >> /dev/null 2>&1`
 
 ## Beacon Host configuration
