@@ -29,3 +29,8 @@ This repository is delivered as a **Laravel-compatible application blueprint** d
 - MySQL 8+
 - Queue worker (for heavy report generation)
 - Cron for subscription reminders
+
+## Hosting entrypoint
+- The web entry file is `public/index.php`.
+- In Apache/cPanel, set your domain DocumentRoot to the `public/` directory.
+- See `QUICK_START_SERVER.md` for launch commands.
