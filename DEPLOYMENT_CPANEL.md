@@ -4,6 +4,7 @@
 2. Upload project to `~/assetpulse`.
 3. Point document root to `~/assetpulse/public`.
 4. At project root, copy `.env.example` to `.env`, then set values:
+4. Set `.env` values:
    - `APP_ENV=production`
    - `APP_URL=https://your-domain.com`
    - `DB_CONNECTION=mysql`
@@ -21,6 +22,14 @@
    - `composer require barryvdh/laravel-dompdf`
    - `composer require maatwebsite/excel`
 8. Create cron jobs:
+5. Run in Terminal:
+   - `php artisan key:generate`
+   - `php artisan migrate --force`
+   - `php artisan db:seed --class=InitialSaasSeeder`
+6. Install report packages:
+   - `composer require barryvdh/laravel-dompdf`
+   - `composer require maatwebsite/excel`
+7. Create cron jobs:
    - `* * * * * php /home/<cpanel-user>/assetpulse/artisan schedule:run >> /dev/null 2>&1`
 
 ## Beacon Host configuration
