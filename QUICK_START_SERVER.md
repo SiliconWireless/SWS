@@ -1,6 +1,8 @@
 # Where is `index.php` and how to launch this project?
 
 ## 1) Entry file location
+The environment file should be at project root: `.env` (copy from `.env.example`).
+
 The public web entrypoint is:
 
 - `public/index.php`

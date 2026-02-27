@@ -3,6 +3,7 @@
 1. Create MySQL database and user in cPanel.
 2. Upload project to `~/assetpulse`.
 3. Point document root to `~/assetpulse/public`.
+4. At project root, copy `.env.example` to `.env`, then set values:
 4. Set `.env` values:
    - `APP_ENV=production`
    - `APP_URL=https://your-domain.com`
