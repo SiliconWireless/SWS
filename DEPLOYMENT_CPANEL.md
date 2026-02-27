@@ -11,6 +11,16 @@
    - `DB_DATABASE=...`
    - `DB_USERNAME=...`
    - `DB_PASSWORD=...`
+5. Import SQL bootstrap (optional alternative to migrations):
+   - `mysql -u <db_user> -p siliconcpanel_basset < database/sql/siliconcpanel_basset.sql`
+6. Run in Terminal:
+   - `php artisan key:generate`
+   - `php artisan migrate --force`
+   - `php artisan db:seed --class=InitialSaasSeeder`
+7. Install report packages:
+   - `composer require barryvdh/laravel-dompdf`
+   - `composer require maatwebsite/excel`
+8. Create cron jobs:
 5. Run in Terminal:
    - `php artisan key:generate`
    - `php artisan migrate --force`
